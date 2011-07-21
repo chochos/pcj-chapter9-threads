@@ -1,0 +1,14 @@
+<project name="pcj-threads" default="build">
+
+<target name="all" depends="build,pack" />
+
+<target name="build">
+	<mkdir dir="bin" />
+	<javac srcdir="src" destdir="bin" deprecation="on" />
+</target>
+
+<target name="pack">
+	<jar file="pcj-threads.jar" basedir="bin" />
+</target>
+
+</project>
